@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+jianying_drafts/
+*.mp3
+*.mp4
+.DS_Store

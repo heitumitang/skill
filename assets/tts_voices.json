@@ -1,0 +1,215 @@
+{
+  "voices": {
+    "普通话·男声": {
+      "zh-CN-YunxiNeural": {
+        "name": "云希",
+        "gender": "男",
+        "style": "阳光活力",
+        "description": "青年男声，阳光活力，自然流畅，默认推荐",
+        "best_for": ["vlog", "general", "short_video"],
+        "rate_range": ["-20%", "+30%"]
+      },
+      "zh-CN-YunjianNeural": {
+        "name": "云健",
+        "gender": "男",
+        "style": "沉稳磁性",
+        "description": "成熟男声，沉稳有磁性，适合深度内容",
+        "best_for": ["documentary", "cinematic", "tech"],
+        "rate_range": ["-20%", "+20%"]
+      },
+      "zh-CN-YunyangNeural": {
+        "name": "云扬",
+        "gender": "男",
+        "style": "新闻播报",
+        "description": "标准普通话，播音腔，权威正式",
+        "best_for": ["news", "product", "documentary"],
+        "rate_range": ["-10%", "+15%"]
+      },
+      "zh-CN-YunzeNeural": {
+        "name": "云泽",
+        "gender": "男",
+        "style": "磁性深沉",
+        "description": "低沉磁性男声，有故事感，适合叙事类",
+        "best_for": ["cinematic", "emotional", "documentary"],
+        "rate_range": ["-20%", "+15%"]
+      },
+      "zh-CN-YunfengNeural": {
+        "name": "云枫",
+        "gender": "男",
+        "style": "自然亲切",
+        "description": "日常口语化，亲切自然，无明显播音感",
+        "best_for": ["vlog", "food", "general"],
+        "rate_range": ["-15%", "+25%"]
+      },
+      "zh-CN-YunhaoNeural": {
+        "name": "云皓",
+        "gender": "男",
+        "style": "阳光清晰",
+        "description": "清晰明朗的男声，适合旅行/户外类",
+        "best_for": ["travel", "vlog", "sports"],
+        "rate_range": ["-15%", "+25%"]
+      },
+      "zh-CN-YunxiaNeural": {
+        "name": "云夏",
+        "gender": "男",
+        "style": "少年清亮",
+        "description": "年轻少年感，清亮活泼，适合青春类内容",
+        "best_for": ["short_video", "vlog", "fast_cut"],
+        "rate_range": ["-10%", "+30%"]
+      }
+    },
+    "普通话·女声": {
+      "zh-CN-XiaoyiNeural": {
+        "name": "晓伊",
+        "gender": "女",
+        "style": "活泼可爱",
+        "description": "年轻女声，活泼有活力，适合轻松内容",
+        "best_for": ["vlog", "short_video", "food"],
+        "rate_range": ["-15%", "+30%"]
+      },
+      "zh-CN-XiaochenNeural": {
+        "name": "晓辰",
+        "gender": "女",
+        "style": "知性温柔",
+        "description": "知性温柔，沉稳大气，适合情感/生活类",
+        "best_for": ["emotional", "documentary", "product"],
+        "rate_range": ["-15%", "+20%"]
+      },
+      "zh-CN-XiaomengNeural": {
+        "name": "晓梦",
+        "gender": "女",
+        "style": "软萌可爱",
+        "description": "软糯甜美，萌系风格，适合美食/萌宠类",
+        "best_for": ["food", "vlog", "short_video"],
+        "rate_range": ["-10%", "+25%"]
+      },
+      "zh-CN-XiaomoNeural": {
+        "name": "晓墨",
+        "gender": "女",
+        "style": "成熟御姐",
+        "description": "成熟大气，御姐风，有控制力",
+        "best_for": ["cinematic", "product", "emotional"],
+        "rate_range": ["-15%", "+20%"]
+      },
+      "zh-CN-XiaoruiNeural": {
+        "name": "晓睿",
+        "gender": "女",
+        "style": "自然亲切",
+        "description": "自然随和，无明显风格，通用性强",
+        "best_for": ["general", "vlog", "documentary"],
+        "rate_range": ["-15%", "+25%"]
+      },
+      "zh-CN-XiaoshuangNeural": {
+        "name": "晓双",
+        "gender": "女",
+        "style": "儿童活泼",
+        "description": "童声风格，适合儿童/亲子类内容",
+        "best_for": ["vlog", "short_video"],
+        "rate_range": ["-10%", "+20%"]
+      },
+      "zh-CN-XiaoxuanNeural": {
+        "name": "晓萱",
+        "gender": "女",
+        "style": "知性成熟",
+        "description": "成熟知性，干练气场，适合商务类内容",
+        "best_for": ["product", "news", "documentary"],
+        "rate_range": ["-15%", "+20%"]
+      },
+      "zh-CN-XiaohanNeural": {
+        "name": "晓涵",
+        "gender": "女",
+        "style": "甜美温柔",
+        "description": "甜美温柔，音质清晰，适合情感/生活类",
+        "best_for": ["emotional", "vlog", "food"],
+        "rate_range": ["-15%", "+25%"]
+      },
+      "zh-CN-XiaozhenNeural": {
+        "name": "晓甄",
+        "gender": "女",
+        "style": "温柔细腻",
+        "description": "声线细腻温柔，适合情感向内容",
+        "best_for": ["emotional", "cinematic", "vlog"],
+        "rate_range": ["-15%", "+20%"]
+      }
+    },
+    "方言·地方口音": {
+      "zh-CN-liaoning-XiaobeiNeural": {
+        "name": "晓北",
+        "gender": "女",
+        "style": "东北方言",
+        "description": "东北口音女声，亲切有亲和力，适合搞笑/生活类",
+        "best_for": ["vlog", "short_video"],
+        "rate_range": ["-10%", "+20%"]
+      },
+      "zh-CN-shaanxi-XiaoniNeural": {
+        "name": "晓妮",
+        "gender": "女",
+        "style": "陕西方言",
+        "description": "陕西方言口音女声，朴实自然",
+        "best_for": ["vlog", "food"],
+        "rate_range": ["-10%", "+15%"]
+      }
+    },
+    "粤语": {
+      "zh-HK-HiuMaanNeural": {
+        "name": "晓曼（粤）",
+        "gender": "女",
+        "style": "粤语·温柔",
+        "description": "粤语女声，温柔流利，适合面向港澳用户的内容",
+        "best_for": ["general", "vlog"],
+        "rate_range": ["-15%", "+20%"]
+      },
+      "zh-HK-WanLungNeural": {
+        "name": "云龙（粤）",
+        "gender": "男",
+        "style": "粤语·沉稳",
+        "description": "粤语男声，沉稳大气",
+        "best_for": ["documentary", "news"],
+        "rate_range": ["-15%", "+15%"]
+      }
+    },
+    "台湾普通话": {
+      "zh-TW-HsiaoChenNeural": {
+        "name": "晓臻（台）",
+        "gender": "女",
+        "style": "台湾腔·甜美",
+        "description": "台湾口音女声，甜美亲切",
+        "best_for": ["vlog", "short_video", "food"],
+        "rate_range": ["-15%", "+25%"]
+      },
+      "zh-TW-YunJheNeural": {
+        "name": "云哲（台）",
+        "gender": "男",
+        "style": "台湾腔·自然",
+        "description": "台湾口音男声，自然流畅",
+        "best_for": ["vlog", "general"],
+        "rate_range": ["-15%", "+20%"]
+      }
+    }
+  },
+  "quick_pick": {
+    "通用男声": "zh-CN-YunxiNeural",
+    "通用女声": "zh-CN-XiaoyiNeural",
+    "播报正式": "zh-CN-YunyangNeural",
+    "磁性深沉": "zh-CN-YunzeNeural",
+    "温柔治愈": "zh-CN-XiaochenNeural",
+    "活泼可爱": "zh-CN-XiaomengNeural",
+    "纪录片腔": "zh-CN-YunjianNeural",
+    "粤语女声": "zh-HK-HiuMaanNeural"
+  },
+  "style_to_voice": {
+    "vlog": "zh-CN-XiaoyiNeural",
+    "fast_cut": "zh-CN-YunxiNeural",
+    "documentary": "zh-CN-YunjianNeural",
+    "cinematic": "zh-CN-YunzeNeural",
+    "travel": "zh-CN-YunhaoNeural",
+    "short_video": "zh-CN-XiaoyiNeural",
+    "emotional": "zh-CN-XiaochenNeural",
+    "product": "zh-CN-YunyangNeural",
+    "sports": "zh-CN-YunfengNeural",
+    "tech": "zh-CN-YunjianNeural",
+    "food": "zh-CN-XiaomengNeural",
+    "news": "zh-CN-YunyangNeural",
+    "general": "zh-CN-YunxiNeural"
+  }
+}

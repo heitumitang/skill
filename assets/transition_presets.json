@@ -1,0 +1,277 @@
+{
+  "transitions": {
+    "dissolve": {
+      "name": "叠化",
+      "description": "淡入淡出，平滑自然，适合大多数场景",
+      "duration_us": 700000,
+      "effect_id": "34443818",
+      "category": "热门",
+      "verified": true
+    },
+    "flash_white": {
+      "name": "闪白",
+      "description": "强烈闪白，视觉冲击强，适合快节奏/卡点视频",
+      "duration_us": 300000,
+      "effect_id": "26135688",
+      "category": "热门",
+      "verified": true
+    },
+    "glitch": {
+      "name": "故障风",
+      "description": "像素错位闪烁，科技感/赛博风",
+      "duration_us": 600000,
+      "effect_id": "40583461",
+      "category": "热门",
+      "verified": true
+    },
+    "shake": {
+      "name": "抖动",
+      "description": "画面抖动切换，能量感强，适合运动/体育视频",
+      "duration_us": 500000,
+      "effect_id": "48498880",
+      "category": "热门",
+      "verified": true
+    },
+    "slow_dissolve": {
+      "name": "慢叠化",
+      "description": "缓慢叠化，梦幻感，适合情感/回忆类视频",
+      "duration_us": 1200000,
+      "effect_id": "97482739",
+      "category": "热门",
+      "verified": true
+    },
+    "slide_left": {
+      "name": "向左推移",
+      "description": "画面向左滑动，适合横向内容展示",
+      "duration_us": 600000,
+      "effect_id": "6b0de3a9-2c5f-4a2c-9e1d-c18e3f9f7c21",
+      "category": "运镜",
+      "verified": false,
+      "note": "需在剪映中预先下载该转场资源"
+    },
+    "blur": {
+      "name": "模糊",
+      "description": "模糊过渡，柔和自然，适合场景切换",
+      "duration_us": 500000,
+      "effect_id": "d2e8f1c6-5b3a-4e7d-a9c2-1f8b6e4d3c07",
+      "category": "基础",
+      "verified": false,
+      "note": "需在剪映中预先下载该转场资源"
+    },
+    "zoom_in": {
+      "name": "画面放大",
+      "description": "推进感，向观众推近，适合强调重点",
+      "duration_us": 500000,
+      "effect_id": "56892341",
+      "category": "运镜",
+      "verified": false,
+      "note": "需在剪映中预先下载该转场资源"
+    },
+    "whip_pan": {
+      "name": "甩镜",
+      "description": "快速水平甩镜，动感强烈，适合Vlog/旅行",
+      "duration_us": 400000,
+      "effect_id": "72341891",
+      "category": "运镜",
+      "verified": false,
+      "note": "需在剪映中预先下载该转场资源"
+    },
+    "circle_wipe": {
+      "name": "圆形擦除",
+      "description": "圆形展开，可爱俏皮，适合生活/美食类",
+      "duration_us": 600000,
+      "effect_id": "88932712",
+      "category": "特效",
+      "verified": false,
+      "note": "需在剪映中预先下载该转场资源"
+    },
+    "film_burn": {
+      "name": "胶片灼烧",
+      "description": "老电影胶片灼烧感，复古情调",
+      "duration_us": 700000,
+      "effect_id": "45678901",
+      "category": "特效",
+      "verified": false,
+      "note": "需在剪映中预先下载该转场资源"
+    },
+    "none": {
+      "name": "无转场",
+      "description": "直接硬切，干净利落",
+      "duration_us": 0,
+      "effect_id": "",
+      "category": "基础",
+      "verified": true
+    }
+  },
+  "style_presets": {
+    "vlog": {
+      "display_name": "生活 Vlog",
+      "description": "轻快日常风格，适合旅行、生活记录",
+      "transition": "dissolve",
+      "transition_duration_us": 500000,
+      "subtitle_style": "outline_clean",
+      "tts_voice": "zh-CN-XiaoyiNeural",
+      "tts_rate": "+5%",
+      "bgm_volume": 0.55,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["旅行", "日常", "生活"]
+    },
+    "fast_cut": {
+      "display_name": "快节奏卡点",
+      "description": "强节奏剪辑，适合卡点、混剪、高能集锦",
+      "transition": "flash_white",
+      "transition_duration_us": 200000,
+      "subtitle_style": "yellow_accent",
+      "tts_voice": "zh-CN-YunxiNeural",
+      "tts_rate": "+15%",
+      "bgm_volume": 0.75,
+      "tts_volume": 1.0,
+      "cut_mode": "smart",
+      "tags": ["卡点", "混剪", "节奏"]
+    },
+    "documentary": {
+      "display_name": "纪录片",
+      "description": "沉稳深沉风格，适合纪录片、专题片、深度内容",
+      "transition": "slow_dissolve",
+      "transition_duration_us": 900000,
+      "subtitle_style": "cinema_bar",
+      "tts_voice": "zh-CN-YunjianNeural",
+      "tts_rate": "-5%",
+      "bgm_volume": 0.35,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["纪录", "深度", "专题"]
+    },
+    "general": {
+      "display_name": "通用默认",
+      "description": "均衡设置，适合各类视频",
+      "transition": "dissolve",
+      "transition_duration_us": 500000,
+      "subtitle_style": "default",
+      "tts_voice": "zh-CN-YunxiNeural",
+      "tts_rate": "+0%",
+      "bgm_volume": 0.5,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["通用", "默认"]
+    },
+    "cinematic": {
+      "display_name": "影视感",
+      "description": "电影级质感，适合短片、MV、艺术视频",
+      "transition": "slow_dissolve",
+      "transition_duration_us": 1000000,
+      "subtitle_style": "cinema_bar",
+      "tts_voice": "zh-CN-YunzeNeural",
+      "tts_rate": "-10%",
+      "bgm_volume": 0.4,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["电影", "艺术", "MV"]
+    },
+    "travel": {
+      "display_name": "旅行探索",
+      "description": "大气宏观风格，适合风景、探索、户外类视频",
+      "transition": "dissolve",
+      "transition_duration_us": 700000,
+      "subtitle_style": "outline_clean",
+      "tts_voice": "zh-CN-YunhaoNeural",
+      "tts_rate": "+0%",
+      "bgm_volume": 0.5,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["旅行", "户外", "风景"]
+    },
+    "short_video": {
+      "display_name": "短视频爆款",
+      "description": "信息密度高，节奏紧凑，适合15-60秒短视频",
+      "transition": "glitch",
+      "transition_duration_us": 400000,
+      "subtitle_style": "yellow_accent",
+      "tts_voice": "zh-CN-XiaoyiNeural",
+      "tts_rate": "+20%",
+      "bgm_volume": 0.7,
+      "tts_volume": 1.0,
+      "cut_mode": "smart",
+      "tags": ["短视频", "抖音", "快手"]
+    },
+    "emotional": {
+      "display_name": "情感治愈",
+      "description": "温柔舒缓，适合情感类、治愈系、回忆向视频",
+      "transition": "slow_dissolve",
+      "transition_duration_us": 1200000,
+      "subtitle_style": "gradient_warm",
+      "tts_voice": "zh-CN-XiaochenNeural",
+      "tts_rate": "-8%",
+      "bgm_volume": 0.45,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["情感", "治愈", "感人"]
+    },
+    "product": {
+      "display_name": "产品展示",
+      "description": "专业清晰，适合产品介绍、评测、商业视频",
+      "transition": "dissolve",
+      "transition_duration_us": 400000,
+      "subtitle_style": "subtitle_with_bg",
+      "tts_voice": "zh-CN-YunyangNeural",
+      "tts_rate": "+5%",
+      "bgm_volume": 0.3,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["产品", "商业", "评测"]
+    },
+    "sports": {
+      "display_name": "运动热血",
+      "description": "激烈动感，适合体育、运动、健身类视频",
+      "transition": "shake",
+      "transition_duration_us": 300000,
+      "subtitle_style": "red_bold",
+      "tts_voice": "zh-CN-YunfengNeural",
+      "tts_rate": "+15%",
+      "bgm_volume": 0.8,
+      "tts_volume": 1.0,
+      "cut_mode": "smart",
+      "tags": ["运动", "体育", "健身"]
+    },
+    "tech": {
+      "display_name": "科技数码",
+      "description": "酷炫前沿感，适合科技、数码、游戏类视频",
+      "transition": "glitch",
+      "transition_duration_us": 500000,
+      "subtitle_style": "neon_glow",
+      "tts_voice": "zh-CN-YunjianNeural",
+      "tts_rate": "+10%",
+      "bgm_volume": 0.55,
+      "tts_volume": 1.0,
+      "cut_mode": "smart",
+      "tags": ["科技", "数码", "游戏"]
+    },
+    "food": {
+      "display_name": "美食生活",
+      "description": "温暖有食欲感，适合美食探店、料理制作视频",
+      "transition": "dissolve",
+      "transition_duration_us": 600000,
+      "subtitle_style": "gradient_warm",
+      "tts_voice": "zh-CN-XiaomengNeural",
+      "tts_rate": "+0%",
+      "bgm_volume": 0.45,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["美食", "探店", "料理"]
+    },
+    "news": {
+      "display_name": "新闻播报",
+      "description": "严肃权威，适合新闻、资讯、口播类视频",
+      "transition": "none",
+      "transition_duration_us": 0,
+      "subtitle_style": "top_title",
+      "tts_voice": "zh-CN-YunyangNeural",
+      "tts_rate": "+0%",
+      "bgm_volume": 0.2,
+      "tts_volume": 1.0,
+      "cut_mode": "sequential",
+      "tags": ["新闻", "资讯", "口播"]
+    }
+  }
+}

@@ -1,61 +1,38 @@
-# jianying-video-editor
+# Skill 合集
 
-自动剪辑视频 Skill — 通过生成剪映草稿 JSON，实现零 GUI 全自动视频剪辑。
+本仓库存放各类 Skill，每个 Skill 占独立子目录，互不干扰。
 
-## 功能
-
-- 视频素材自动拼接 + 转场特效
-- 智能旁白文案生成 + TTS 配音
-- 多种字幕样式（10 种预设）
-- 多种转场特效（12 种预设）
-- 13 种剪辑风格预设一键设定
-- 20+ 种 TTS 音色选择
-- 自动注入剪映草稿目录
-
-## 快速开始
-
-详见 [安装与使用文档.md](安装与使用文档.md)。
-
-```bash
-python scripts/jianying_edit.py \
-  --name "我的第一个视频" \
-  --files video1.mp4 video2.mp4 video3.mp4 \
-  --narration-json '[{"index":0,"text":"开场白"}]' \
-  --tts-voice zh-CN-YunxiNeural \
-  --transitions dissolve \
-  --subtitle-style default \
-  --style general
-```
-
-打开剪映 → 本地草稿 → 即可查看和导出。
-
-## 系统要求
-
-- Windows 10/11
-- 剪映专业版 5.9 及以下
-- Python 3.8+
-- 依赖：edge-tts, opencv-python-headless, mutagen, tabulate
-
-## 剪映版本兼容性
-
-| 版本 | 草稿生成 | 草稿读取 |
-|------|---------|---------|
-| 5.x | 完全兼容 | 完全兼容 |
-| 6.x+ | 可能兼容 | 加密不可读 |
-
-推荐使用剪映专业版 5.9 及以下。
-
-## 文件结构
+## 目录结构
 
 ```
-jianying-video-editor/
-├── SKILL.md              ← Skill 描述文件
-├── 安装与使用文档.md      ← 完整安装和使用说明
-├── scripts/               ← 核心脚本
-├── assets/                ← 配置文件（字幕样式/转场/音色）
-└── references/            ← 剪映草稿结构文档
+skill/
+├── jianying-video-editor/   ← 自动剪辑视频 Skill
+├── <其他-skill>/            ← 后续新增的 Skill
+├── README.md                ← 本文件（仓库总览）
+└── .gitignore
 ```
+
+## 已收录 Skill
+
+| Skill | 说明 | 详情 |
+|-------|------|------|
+| [jianying-video-editor](jianying-video-editor/) | 通过生成剪映草稿 JSON，实现零 GUI 全自动视频剪辑 | [安装与使用文档](jianying-video-editor/安装与使用文档.md) |
+
+## 新增 Skill
+
+每个 Skill 放在独立子目录下，结构如下：
+
+```
+<skill-name>/
+├── SKILL.md          ← Skill 描述文件
+├── README.md         ← 该 Skill 的简介（可选）
+├── scripts/          ← 脚本（如有）
+├── assets/           ← 配置/资源（如有）
+└── ...
+```
+
+只需新建子目录并提交即可，不会与其他 Skill 冲突。
 
 ## License
 
-MIT
+各 Skill 遵循各自目录内的 License 说明，未注明者默认 MIT。

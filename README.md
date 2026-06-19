@@ -17,3 +17,28 @@ skill/
 | Skill | 说明 | 详情 |
 |-------|------|------|
 | [jianying-video-editor](jianying-video-editor/) | 通过生成剪映草稿 JSON，实现零 GUI 全自动视频剪辑 | [安装与使用文档](jianying-video-editor/安装与使用文档.md) |
+
+### 附带资源
+
+| 资源 | 说明 | 下载 |
+|------|------|------|
+| 剪映专业版 5.9 安装包 | 推荐使用的剪映版本（5.x 系列最后不加密版本） | [GitHub Release](https://github.com/heitumitang/skill/releases/tag/v5.9.0) |
+
+## 新增 Skill
+
+每个 Skill 放在独立子目录下，结构如下：
+
+```
+<skill-name>/
+├── SKILL.md          ← Skill 描述文件
+├── README.md         ← 该 Skill 的简介（可选）
+├── scripts/          ← 脚本（如有）
+├── assets/           ← 配置/资源（如有）
+└── ...
+```
+
+只需新建子目录并提交即可，不会与其他 Skill 冲突。
+
+## License
+
+各 Skill 遵循各自目录内的 License 说明，未注明者默认 MIT。

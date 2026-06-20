@@ -4,11 +4,11 @@ description: >
   AI 自动剪辑视频 Skill，使用剪映（JianyingPro）完成视频剪辑。
   通过直接生成剪映草稿 JSON 文件（draft_content.json），实现零 GUI 操作的全自动视频剪辑。
   适配所有 agent：接收自然语言剪辑指令，分析素材，AI 看画面写旁白，生成草稿，注入剪映。
-version: "4.6"
+version: "4.7"
 agent_created: true
 ---
 
-# jianying-video-editor — AI 自动剪辑视频 Skill（v4.6）
+# jianying-video-editor — AI 自动剪辑视频 Skill（v4.7）
 
 ## 触发条件
 
@@ -95,6 +95,21 @@ agent_created: true
 3. **精确音频时长**：TTS 生成后用 `mutagen` 读取 MP3 精确时长，替代粗略的文件大小估算（从 32kbps 改为更精确的 mutagen 解析）
 
 **效果**：字幕偏移量与音频播放时间在同一时间线上，消除基准不一致导致的偏移；标点停顿让短句切换更自然。
+
+---
+
+## v4.7 改动说明
+
+**问题**：字幕超出画面边界（尤其宽屏/超长文本时）。
+
+**根本原因**：`force_apply_line_max_width` 设置为 `False`，导致剪映不强制执行 `line_max_width` 约束，文本按实际像素宽度渲染，超出可视区域后既不换行也不裁切。
+
+**修复内容**：
+1. **`force_apply_line_max_width: False → True`**：强制剪映在 `line_max_width` 范围内换行，确保文本不超出画面
+2. **`inner_padding: -1.0 → 0.0`**：修复负数内边距可能导致文本渲染偏移
+3. **`text_size` 从 `font_size*6` 调大为 `max(48, font_size*10)`**：增大文本渲染缓冲区，避免文字超出 clip 边界
+
+**效果**：所有字幕严格约束在 `line_max_width`（默认 82% 画幅）范围内，超长文本自动换行，不再超出画面。
 
 ---
 
